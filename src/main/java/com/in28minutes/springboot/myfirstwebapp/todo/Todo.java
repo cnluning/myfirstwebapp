@@ -2,9 +2,12 @@ package com.in28minutes.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
 
-public class ToDo {
+//Database (MySQL) 
+//Static List of todos => Database (H2, MySQL)
 
-	public ToDo(int id, String username, String description, LocalDate targetDate, boolean done) {
+public class Todo {
+
+	public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -61,7 +64,7 @@ public class ToDo {
 
 	@Override
 	public String toString() {
-		return "ToDo [id=" + id + ", username=" + username + ", description=" + description + ", targetDate="
+		return "Todo [id=" + id + ", username=" + username + ", description=" + description + ", targetDate="
 				+ targetDate + ", done=" + done + "]";
 	}
 

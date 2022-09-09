@@ -12,5 +12,4 @@ public class AuthenticationService {
 		
 		return isValidUserName && isValidPassword;
 	}
-
 }
